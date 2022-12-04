@@ -1,0 +1,15 @@
+C:\Users\maxim\Documents\Git\advent-of-code-2022\ConsoleApp1\obj\Debug\net7.0\Solutions.csproj.AssemblyReference.cache
+C:\Users\maxim\Documents\Git\advent-of-code-2022\ConsoleApp1\obj\Debug\net7.0\Solutions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maxim\Documents\Git\advent-of-code-2022\ConsoleApp1\obj\Debug\net7.0\Solutions.AssemblyInfoInputs.cache
+C:\Users\maxim\Documents\Git\advent-of-code-2022\ConsoleApp1\obj\Debug\net7.0\Solutions.AssemblyInfo.cs
+C:\Users\maxim\Documents\Git\advent-of-code-2022\ConsoleApp1\obj\Debug\net7.0\Solutions.csproj.CoreCompileInputs.cache
+C:\Users\maxim\Documents\Git\advent-of-code-2022\ConsoleApp1\bin\Debug\net7.0\Solutions.exe
+C:\Users\maxim\Documents\Git\advent-of-code-2022\ConsoleApp1\bin\Debug\net7.0\Solutions.deps.json
+C:\Users\maxim\Documents\Git\advent-of-code-2022\ConsoleApp1\bin\Debug\net7.0\Solutions.runtimeconfig.json
+C:\Users\maxim\Documents\Git\advent-of-code-2022\ConsoleApp1\bin\Debug\net7.0\Solutions.dll
+C:\Users\maxim\Documents\Git\advent-of-code-2022\ConsoleApp1\bin\Debug\net7.0\Solutions.pdb
+C:\Users\maxim\Documents\Git\advent-of-code-2022\ConsoleApp1\obj\Debug\net7.0\Solutions.dll
+C:\Users\maxim\Documents\Git\advent-of-code-2022\ConsoleApp1\obj\Debug\net7.0\refint\Solutions.dll
+C:\Users\maxim\Documents\Git\advent-of-code-2022\ConsoleApp1\obj\Debug\net7.0\Solutions.pdb
+C:\Users\maxim\Documents\Git\advent-of-code-2022\ConsoleApp1\obj\Debug\net7.0\Solutions.genruntimeconfig.cache
+C:\Users\maxim\Documents\Git\advent-of-code-2022\ConsoleApp1\obj\Debug\net7.0\ref\Solutions.dll

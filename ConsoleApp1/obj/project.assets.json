@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\maxim\\Documents\\Git\\advent-of-code-2022\\ConsoleApp1\\Day 1.csproj",
-      "projectName": "Day 1",
-      "projectPath": "C:\\Users\\maxim\\Documents\\Git\\advent-of-code-2022\\ConsoleApp1\\Day 1.csproj",
+      "projectUniqueName": "C:\\Users\\maxim\\Documents\\Git\\advent-of-code-2022\\ConsoleApp1\\Solutions.csproj",
+      "projectName": "Solutions",
+      "projectPath": "C:\\Users\\maxim\\Documents\\Git\\advent-of-code-2022\\ConsoleApp1\\Solutions.csproj",
       "packagesPath": "C:\\Users\\maxim\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\maxim\\Documents\\Git\\advent-of-code-2022\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
