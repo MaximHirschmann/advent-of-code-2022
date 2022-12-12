@@ -119,11 +119,6 @@ namespace Day11
             List<long> ordered = this.monkeys.Select(m => m.inspections).Order().ToList();
             return ordered[^1] * ordered[^2];
         }
-
-        public int NumItems()
-        {
-            return this.monkeys.Select(m => m.CountItems()).Sum();
-        }
     }
 
     public class Monkey
@@ -167,11 +162,6 @@ namespace Day11
             }
 
             return res;
-        }
-
-        internal int CountItems()
-        {
-            return this.items.Count;
         }
     }
 }

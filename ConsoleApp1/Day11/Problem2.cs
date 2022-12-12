@@ -10,8 +10,6 @@
             long res = pack.MonkeyBusiness();
 
             Console.WriteLine(res);
-            //39_109_444_654
-            
         }
     }
 }
