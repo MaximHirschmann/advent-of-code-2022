@@ -27,11 +27,13 @@ namespace Day14
         public Grid()
         {
             this.blocked = new();
+            this.blocked[(0, 500)] = '+';
             this.lowestBlock = 0;
         }
 
         private void AddBlock(int y, int x, char character = '#')
         {
+
             this.blocked[(y, x)] = character;
             if (y > this.lowestBlock) {
                 this.lowestBlock = y;
@@ -76,8 +78,8 @@ namespace Day14
             while (true)
             {
                 (int, int) below = (y + 1, x);
-                (int, int) leftBelow = (y + 1, x + 1);
-                (int, int) rightBelow = (y + 1, x - 1);
+                (int, int) leftBelow = (y + 1, x - 1);
+                (int, int) rightBelow = (y + 1, x + 1);
 
                 if (!this.blocked.ContainsKey(below))
                 {
@@ -101,6 +103,50 @@ namespace Day14
                 {
                     return false;
                 }
+            }
+        }
+
+        public bool DropSand2()
+        {
+            (int y, int x) = (0, 500);
+
+            while (true)
+            {
+                if (y == this.lowestBlock + 1)
+                {
+                    this.blocked[(y, x)] = 'o';
+                    return true;
+                }
+
+                (int, int) below = (y + 1, x);
+                (int, int) leftBelow = (y + 1, x - 1);
+                (int, int) rightBelow = (y + 1, x + 1);
+
+                if (!this.blocked.ContainsKey(below))
+                {
+                    (y, x) = below;
+                }
+                else if (!this.blocked.ContainsKey(leftBelow))
+                {
+                    (y, x) = leftBelow;
+                }
+                else if (!this.blocked.ContainsKey(rightBelow))
+                {
+                    (y, x) = rightBelow;
+                }
+                else
+                {
+                    if (y == 0 && x == 500)
+                    {
+                        return false;
+                    }
+
+                    this.blocked[(y, x)] = 'o';
+                    return true;
+                }
+
+
+                
             }
         }
 

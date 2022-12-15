@@ -7,15 +7,22 @@
             string[] input = Solution.ReadInput();
 
             Grid grid = new Grid();
+            foreach (string s in input)
+            {
+                string[] split = s.Split(" -> ");
+                int x = Convert.ToInt32(split[0].Split(',')[0]);
+                int y = Convert.ToInt32(split[0].Split(',')[1]);
+                for (int i = 1; i < split.Length; i++)
+                {
+                    int x2 = Convert.ToInt32(split[i].Split(',')[0]);
+                    int y2 = Convert.ToInt32(split[i].Split(',')[1]);
 
-            grid.AddWalls(4, 498, 6, 498);
-            grid.AddWalls(6, 498, 6, 496);
+                    grid.AddWalls(y, x, y2, x2);
 
-            grid.AddWalls(4, 503, 4, 502);
-            grid.AddWalls(4, 502, 9, 502);
-            grid.AddWalls(9, 502, 9, 494);
-
-            grid.Print();
+                    x = x2;
+                    y = y2;
+                }
+            }
 
             int count = 0;
             while (true)
@@ -26,7 +33,6 @@
                 }
                 count++;
             }
-            grid.Print();
             Console.WriteLine(count);
 
         }
