@@ -19,7 +19,7 @@ namespace Day15
 
             string pattern = @"Sensor at x=(-?[0-9]*), y=(-?[0-9]*): closest beacon is at x=(-?[0-9]*), y=(-?[0-9]*)";
 
-            List<Diamond> polygons = new();
+            List<Diamond> diamonds = new();
             this.sensors = new();
 
             // read input data
@@ -44,18 +44,18 @@ namespace Day15
 
                 Diamond polygon = new Diamond(new List<Pos>() { above, right, below, left });
 
-                polygons.Add(polygon);
+                diamonds.Add(polygon);
             }
 
             // count positions where intersections of a lot of diamonds occur
             // these are the points that are just on the border of the radius of multiple sensors
             Dictionary<Pos, int> candidates = new();
 
-            for (int i = 0; i < polygons.Count; i++)
+            for (int i = 0; i < diamonds.Count; i++)
             {
-                for (int j = i+1; j < polygons.Count; j++)
+                for (int j = i+1; j < diamonds.Count; j++)
                 {
-                    foreach (Pos candidate in GetIntersectionPoints(polygons[i], polygons[j]))
+                    foreach (Pos candidate in GetIntersectionPoints(diamonds[i], diamonds[j]))
                     {
                         if (!candidates.ContainsKey(candidate))
                         {
