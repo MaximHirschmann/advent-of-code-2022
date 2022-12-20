@@ -11,6 +11,10 @@ namespace Day16
             Problem1.Solve();
             Console.WriteLine(sw.Elapsed.ToString());
 
+            Stopwatch sw3 = Stopwatch.StartNew();
+            //Problem1Graph.Solve();
+            Console.WriteLine(sw3.Elapsed.ToString());
+
             Stopwatch sw2 = Stopwatch.StartNew();
             Problem2.Solve();
             Console.WriteLine(sw2.Elapsed.ToString());
