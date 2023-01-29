@@ -98,6 +98,23 @@ public class Player
         }
     }
 
+    public void Move2(Command command)
+    {
+        int sizeOfFace = 4;
+
+        this.Rotate(command.rotation);
+        for (int i = 0; i < command.steps; i++)
+        {
+            int newY = this.y + this.orientation.Item1;
+            int newX = this.x + this.orientation.Item2;
+
+            
+
+            this.y = newY;
+            this.x = newX;
+        }
+    }
+
 
     private void Rotate(char rotation)
     {
