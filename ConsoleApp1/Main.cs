@@ -2,6 +2,6 @@
 {
     static void Main()
     {
-        Day14.Solution.Solve();
+        Day22.Solution.Solve();
     }
 }
