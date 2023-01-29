@@ -13,7 +13,11 @@ public class Solution
 
     public static string[] ReadInput()
     {
-        string[] lines = File.ReadAllLines(@"C:\\Users\\maxim\\Documents\\Git\\advent-of-code-2022\\ConsoleApp1\\Day21\\input.txt");
+        string thisFIlePath = new System.Diagnostics.StackTrace(true).GetFrame(0)!.GetFileName()!;
+        string directoryPath = System.IO.Path.GetDirectoryName(thisFIlePath)!;
+        string inputTxtPath = directoryPath + @"\input.txt";
+
+        string[] lines = File.ReadAllLines(inputTxtPath);
 
         return lines;
     }

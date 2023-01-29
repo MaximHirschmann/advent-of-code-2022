@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Day15
+namespace Day2
 {
     public class Solution
     {
@@ -10,13 +10,13 @@ namespace Day15
             Problem2.Solve();
         }
 
-        public static string ReadInput()
+        public static string[] ReadInput()
         {
             string thisFIlePath = new System.Diagnostics.StackTrace(true).GetFrame(0)!.GetFileName()!;
             string directoryPath = System.IO.Path.GetDirectoryName(thisFIlePath)!;
             string inputTxtPath = directoryPath + @"\input.txt";
 
-            string lines = File.ReadAllText(inputTxtPath);
+            string[] lines = File.ReadAllLines(inputTxtPath);
 
             return lines;
         }

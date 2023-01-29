@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Day7
+﻿namespace Day7
 {
     public class Solution
     {
@@ -12,7 +10,11 @@ namespace Day7
 
         public static string[] ReadInput()
         {
-            string[] lines = System.IO.File.ReadAllLines(@"C:\\Users\\maxim\\Documents\\Git\\advent-of-code-2022\\ConsoleApp1\\Day7\\input.txt");
+            string thisFIlePath = new System.Diagnostics.StackTrace(true).GetFrame(0)!.GetFileName()!;
+            string directoryPath = System.IO.Path.GetDirectoryName(thisFIlePath)!;
+            string inputTxtPath = directoryPath + @"\input.txt";
+            
+            string[] lines = System.IO.File.ReadAllLines(inputTxtPath);
 
             return lines;
         }
